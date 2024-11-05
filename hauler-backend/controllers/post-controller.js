@@ -1,10 +1,7 @@
 // const admin = require('firebase-admin');
 // const firestore = admin.firestore();
 const admin = require('firebase-admin');
-admin.initializeApp({
-  credential: admin.credential.applicationDefault(), 
-  databaseURL: "https://<database-url>"  // the database URL
-});
+
 //================================ Create new post on user app =====================================//
 const createPost = async (req, res) => {
     try {
