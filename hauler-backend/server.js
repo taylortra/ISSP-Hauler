@@ -8,6 +8,10 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || "3000";
 
+// do we have a service account key initialized somewhere?? 
+// const serviceAccount = require(serviceAccountKey.json)
+
+// Connect to Firebase
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: 'hauler-db.firebaseapp.com'
